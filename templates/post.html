@@ -1,0 +1,79 @@
+<!-- 
+> Avalible post placeholders 
+> Surround with {{{placeholder}}}
+> author - Returns the post author
+> title - Returns the post title
+> post - Returns the message on the post
+-->
+<!DOCTYPE html>
+    <html>
+<title>{{{title}}}</title>
+<p class="post-name">{{{title}}}</h1>
+<li>
+                <br class="clear">
+                <div>
+                  <div class="message-info">
+                    <!--<img class="avatar" src="https://soon">-->
+                    <span class="tag">{{{author}}}</span>
+                  </div>
+                </div>
+                <p class="message-text">{{{post}}}</p>
+                
+                
+              </li>
+
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #2C2F33;
+      }
+      p, span {
+        color: white;
+        font-family: sans-serif;
+        margin: 3px;
+      }
+      .post-name {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .message-count {
+        font-size: 20px;
+        color: rgb(116, 118, 119);
+      }
+      .avatar {
+        height: 46px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .time {
+        color: rgb(127, 133, 136);
+      }
+      .message > * {
+        float: left;
+      }
+      .clear { clear: both; }
+      .message-text {
+        color: rgb(218, 224, 227);
+      }
+      .tag {
+        font-size: 18px;
+      }
+      .message-image { 
+        height: 128px;
+      }
+      .message-info span {
+        position: relative;
+        bottom: 15px;
+      }
+      .messages li *:nth-child(3):not(span) {
+        margin-left: 50px;
+      }
+      </style>
+    </html>

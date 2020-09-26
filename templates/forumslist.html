@@ -1,0 +1,72 @@
+<!-- 
+> Add formatting of your choice, Placeholder
+> Surround with {{{placeholder}}}
+> posts - the post formatting from the listformat file 
+-->
+
+<!DOCTYPE html>
+    <html>
+      <body>
+        <div class="container">
+          <p class="forum-name">JSBoard forums</h1>
+          <p class="page-name">Posts</h3>
+          {{{posts}}}
+</body>
+<style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #2C2F33;
+      }
+      p, span {
+        color: white;
+        font-family: sans-serif;
+        margin: 3px;
+      }
+      .forum-name {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .page-name {
+        font-size: 22px;
+      }
+      .message-count {
+        font-size: 20px;
+        color: rgb(116, 118, 119);
+      }
+      .avatar {
+        height: 46px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .time {
+        color: rgb(127, 133, 136);
+      }
+      .message > * {
+        float: left;
+      }
+      .clear { clear: both; }
+      .message-text {
+        color: rgb(218, 224, 227);
+      }
+      .tag {
+        font-size: 18px;
+      }
+      .message-image { 
+        height: 128px;
+      }
+      .message-info span {
+        position: relative;
+        bottom: 15px;
+      }
+      .messages li *:nth-child(3):not(span) {
+        margin-left: 50px;
+      }
+ </style>
+      </html>
