@@ -2,7 +2,8 @@ const fs = require("file-system")
 const utls = require("./utls.js")
 const main = require("./index.js")
 const Database = main.Database
-const users = main.users
+const user = require("./users.js")
+const users = user.users
 
 
 /*
@@ -37,7 +38,7 @@ default:
 // Get The main page for forums
 function mainForumsPage(){ 
 var posts = "";
-  for(var i = fs.readFileSync("./forums/databases/posts.txt", "utf8"); i > 0; i--){
+  for(var i = fs.readFileSync("./forums/databases/posts.txt", "utf8")/*users.get("posts.count")*/; i > 0; i--){
     var postformat = ""+fs.readFileSync("./templates/listformat.html", "utf8")+""
     var postformat = postformat.split("{{{link}}}").join("/forums/"+i+"/")
     var postformat = postformat.split("{{{id}}}").join(i)
